@@ -49,15 +49,6 @@ async def get_productos():
         if producto["disponible"]:
             productos_disponibles.append(producto)
     return productos_disponibles
-    
-    
-    
-    # for producto in productos:
-    #     if producto["disponible"] == True:
-    #         return producto
-
-#FILTRAR POR ACTIVOS
-
 
 @app.get(
         "/productos/{id}",
